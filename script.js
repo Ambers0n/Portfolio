@@ -80,10 +80,9 @@ const copy = {
     contactTitle: "Давайте создадим<br /><em>что-то классное.</em>",
     contactText:
       "Открыт к стажировкам, интересным проектам и новым знакомствам.",
-    contactButton: "Написать мне",
+    contactButton: "Написать на почту",
+    contactButton2: "Написать на Whatsapp",
     emailHint: "Замените адрес почты на свой",
-    elsewhere: "ЕЩЁ Я ЗДЕСЬ",
-    socialHint: "Добавьте ссылки на свои профили",
     footerMade: "Сделано с интересом к деталям.",
   },
   en: {
@@ -120,10 +119,9 @@ const copy = {
     contactTitle: "Let’s make<br /><em>something great.</em>",
     contactText:
       "Open to internships, interesting projects, and meeting new people.",
-    contactButton: "Get in touch",
+    contactButton: "Write an email",
+    contactButton2: "Write on Whatsapp",
     emailHint: "Replace this with your email address",
-    elsewhere: "FIND ME ELSEWHERE",
-    socialHint: "Add links to your profiles",
     footerMade: "Made with an eye for detail.",
   },
   kk: {
@@ -158,10 +156,9 @@ const copy = {
     contactTitle: "Керемет дүние<br /><em>бірге жасайық.</em>",
     contactText:
       "Тағылымдамаға, қызықты жобаларға және жаңа таныстықтарға ашықпын.",
-    contactButton: "Хат жазу",
+    contactButton: "поштаға жазыңыз",
+    contactButton2: "whatsapp-қа жазыңыз",
     emailHint: "Электрондық поштаңызды енгізіңіз",
-    elsewhere: "МЕНІ ОСЫНДАН ДА ТАБАСЫЗ",
-    socialHint: "Профильдеріңізге сілтемелер қосыңыз",
     footerMade: "Егжей-тегжейге мән беріп жасалды.",
   },
 };
@@ -203,17 +200,18 @@ Object.assign(copy.en, {
     "Up to 5 pages in a consistent style: home, services, about, and contact.",
   navSetup: "Navigation between pages",
   priceShopTitle: "Online store",
-  priceShopDesc: "Product catalog, item selection, a shopping cart, and order submission to the manager.",
+  priceShopDesc:
+    "Product catalog, item selection, a shopping cart, and order submission to the manager.",
   cart: "Product catalog and basic cart",
   orderContact: "Orders by contact link or messenger",
   priceBotTitle: "Telegram integration",
-  priceBotDesc: "Connect an existing bot or build a new one for the website to collect enquiries or provide services in Telegram.",
+  priceBotDesc:
+    "Connect an existing bot or build a new one for the website to collect enquiries or provide services in Telegram.",
   oneScenario: "Bot development",
   existingBot: "Connect an existing bot",
   apiAccess: "Access to the bot API and settings",
   priceNote:
     "Starting prices. Content entry, custom design, admin panel, online payments, CRM/1C integrations, hosting, and domain are quoted separately. The online store price covers a basic catalog and order collection, without payment processing or customer accounts.",
-
 });
 Object.assign(copy.kk, {
   navPricing: "Бағалар",
@@ -251,17 +249,18 @@ Object.assign(copy.kk, {
     "Бір стильдегі 5 бетке дейін: басты бет, қызметтер, біз туралы, байланыс.",
   navSetup: "Беттер арасындағы навигация",
   priceShopTitle: "Интернет-дүкен",
-  priceShopDesc: "Тауарлар каталогы, тауарды таңдау, себет және тапсырысты менеджерге жіберу.",
+  priceShopDesc:
+    "Тауарлар каталогы, тауарды таңдау, себет және тапсырысты менеджерге жіберу.",
   cart: "Каталог және негізгі себет",
   orderContact: "Байланыс не мессенджер арқылы тапсырыс",
   priceBotTitle: "Telegram интеграциясы",
-  priceBotDesc: "Өтінімдерді қабылдау немесе Telegram ішінде қызмет көрсету үшін дайын ботты сайтқа қосу не жаңа бот әзірлеу.",
+  priceBotDesc:
+    "Өтінімдерді қабылдау немесе Telegram ішінде қызмет көрсету үшін дайын ботты сайтқа қосу не жаңа бот әзірлеу.",
   oneScenario: "Бот әзірлеу",
   existingBot: "Дайын ботты қосу",
   apiAccess: "Бот API-і мен баптауларына қолжетімділік",
   priceNote:
     "Бастапқы бағалар. Контент енгізу, жеке дизайн, әкімші панелі, онлайн төлем, CRM/1С интеграциясы, хостинг пен домен бөлек есептеледі. Интернет-дүкен бағасына төлем жүйесі мен жеке кабинетсіз қарапайым каталог және тапсырыс қабылдау кіреді.",
-
 });
 
 const langButtons = document.querySelectorAll(".language");
@@ -325,7 +324,6 @@ if ("IntersectionObserver" in window && !motionOff) {
   revealItems.forEach((item) => observer.observe(item));
 }
 
-// A small, optional star field. If canvas is unavailable, the CSS background remains intact.
 const canvas = document.querySelector(".sky");
 const context = canvas?.getContext("2d", { alpha: true });
 if (context) {
@@ -391,3 +389,4 @@ if (context) {
     else if (!motionOff) frame = requestAnimationFrame(draw);
   });
 }
+contactButton;
