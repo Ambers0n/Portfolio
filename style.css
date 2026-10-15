@@ -1031,11 +1031,11 @@ h2 em {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 22px;
 }
 .footer-links a {
   color: #c4c9da;
-  font-size: 11px;
+  font-size: 18px;
   transition: color 180ms ease;
 }
 .footer-links a:hover,
